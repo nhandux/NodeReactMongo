@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            {{#if hasErrors}}
+                {{#each messages}}
+                    <div class="alert alert-danger row">
+                        {{this}}        
+                    </div>
+                {{/each}}
+            {{/if}}
+            <form action="/thanh-vien/dang-nhap" method="POST" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <a href="/thanh-vien/dang-ky" class="pull-right">I not have account</a>
+                    <legend>Login User </legend>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
+                </div>
+                <div class="form-group">
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}"/>
+                    <label class="pull-left" style="font-weight: normal"><input type="checkbox" name="accept" /> Remember Me </label>
+                    <button type="submit" class="btn btn-primary pull-right">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

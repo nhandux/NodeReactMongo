@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="col-md-10">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Name</th>
+                    <th>Slug</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each category }}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name}}</td>
+                    <td>{{slug}}</td>
+                    <td>
+                        <a href="/admin/category/{{_id}}"><small>Sửa</small></a> &nbsp; &nbsp;
+                        <a onclick="deleteCategory('{{_id}}')"><small>Xóa</small></a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="/javascripts/eventClick.js"></script>

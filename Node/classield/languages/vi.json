@@ -1,0 +1,26 @@
+{
+	"en": "English",
+	"vi": "Việt Nam",
+	"submit": "Tìm kiếm",
+	"%d Stt": {
+		"one": "%d Stt",
+		"other": "%d Stt"
+	},
+	"%d Stt %s": {
+		"one": "%d Stt %s",
+		"other": "%d Stt %s"
+	},
+	"%d Stt %d": {
+		"one": "%d Stt %d",
+		"other": "%d Stt %d"
+	},
+	"Member Register": "Member Register",
+	"Please enter input first name": "Please enter input first name",
+	"Please enter input last name": "Please enter input last name",
+	"Please enter input email": "Please enter input email",
+	"Please input password or password must be at least %d": "Please input password or password must be at least %d",
+	"Confirm password is not the same, please check ": "Confirm password is not the same, please check ",
+	"You have to accept with our terms": "You have to accept with our terms",
+	"Member notfound!": "Member notfound!",
+	"Password error, plz try again": "Password error, plz try again"
+}

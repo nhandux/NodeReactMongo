@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+             {{#if hasErrors}}
+                {{#each messages}}
+                    <div class="alert alert-danger row">
+                        {{this}} Errors
+                    </div>
+                {{/each}}
+            {{/if}}
+            <form action="/thanh-vien/dang-ky" method="POST" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <a href="/thanh-vien/dang-nhap" class="pull-right">I have account</a>
+                        <legend>Register User </legend>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="firtname">FistName</label>
+                                <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Plz Enter FirstName">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastname">LastName</label>
+                                <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Plz Enter LastName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                         <input type="email" name="email" class="form-control" id="email" placeholder="Plz Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                         <input type="password" name="password" class="form-control" id="password" placeholder="Plz Enter Password">
+                    </div>
+                     <div class="form-group">
+                        <label for="confirmpassword">Confirm Password</label>
+                         <input type="password" name="confirmpassword" class="form-control" id="confirmpassword" placeholder="Plz Enter Confirm Password">
+                    </div>
+                    <div class="form-group">
+                        <p for="confirmpassword">Do you want to subcrive to our promotional emal</p>
+                        <label>RememberMe</label>&nbsp; &nbsp; &nbsp;
+                        <label style="font-weight: normal"><input type="radio" name="newsleter" value="1" checked="checked" > Yes &nbsp; &nbsp;</label>
+                        <label style="font-weight: normal"><input type="radio" name="newsleter" value="0" checked="checked" > No</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="_csrf" value="{{csrfToken}}"/>
+                        <label class="pull-left" style="font-weight: normal"><input type="checkbox" name="accept" value="1"/> I have read and agree to the Terms </label>
+                        <button type="submit" class="btn btn-primary pull-right">Register</button>
+                    </div>
+                    
+            </form>
+            
+        </div>
+    </div>
+</div>

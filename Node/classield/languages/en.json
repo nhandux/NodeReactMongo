@@ -1,0 +1,13 @@
+{
+	"en": "English",
+	"vi": "Việt Nam",
+	"submit": "Submit",
+	"%d Stt": {
+		"one": "%d Stt",
+		"other": "%d Stt"
+	},
+	"Member Register": "Member Register",
+	"Please enter input email": "Please enter input email",
+	"Please input password or password must be at least %d": "Please input password or password must be at least %d",
+	"Member notfound!": "Member notfound!"
+}
